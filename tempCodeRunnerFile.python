@@ -1,0 +1,6 @@
+x=int(input("enter number:") )
+while(x!=0):
+    temp=x
+    temp=temp%10
+    print(temp)
+    x=x/10

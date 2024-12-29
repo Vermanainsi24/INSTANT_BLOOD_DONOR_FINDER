@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        .container{
+            background:linear-gradient(135deg,rgb(231, 123, 123),rgb(210, 61, 61));
+        }
+        
+        #sah{
+            text-decoration: none;
+
+        }
+        #form1{
+            
+            padding-left: 650px;
+        }
+        header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    border:3px solid red;
+    height:130px;
+    background:rgb(231, 224, 224);
+
+}
+#logo{
+    height:100px;
+    width:120px;
+    margin-top:20px;
+}
+#webname{
+    margin-top:50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;}
+    .navbar{
+   /*border:1px solid red;*/
+
+   display:flex;
+   flex-direction:row;
+   justify-content: center;
+   align-content: center;
+   
+     
+}
+li{
+    list-style: none;
+    margin-right:50px;
+    margin-top:10px;
+    font-size: 14PX;
+    font-weight: bolder;
+    color: rgb(12, 12, 69);
+    border:1px solid gray;
+    height: 27px;
+    border-radius: 14px;
+    width:150px;
+    text-align: center;
+    padding-top: 8px;
+    margin-left: 20px;
+    justify-content: space-around;
+    background:rgb(236, 7, 7);
+    color:white;
+    border:2px solid black;
+    
+    
+
+}
+li:hover{
+    background:brown;
+    color:black;
+}
+.register{
+    border:2px solid white;
+    display:flex;
+    flex-direction:column;
+    justify-items: center;
+    align-items: center;
+
+}
+.img{
+    margin-left:-500px;
+    margin-top:200px;
+}
+#form1{
+    border:2px solid rgb(248, 60, 60);
+    margin-left: -100px;
+}
+#case_description{
+    height:100px;
+    width:250px;
+}
+.icon{
+    
+    
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+
+}
+a{
+    text-decoration: none;
+    color:black;
+
+}
+input{
+    width:200px;
+    height:30px;
+    border-radius: 10px;
+}
+.footer{
+    background:linear-gradient(135deg,white,whitesmoke);
+    
+
+}
+.foot{
+    display:flex;
+    align-items: center;
+    justify-items: center;
+}
+#SUBMIT{
+    height:40px;
+    WIDTH:100PX;
+    border-radius: 50px;
+    background-color: rgb(203, 50, 50);
+    color:white;
+    border:2px solid black;
+    margin-left:200px;
+
+}
+#RESET{
+    height:40px;
+    WIDTH:100PX;
+    border-radius: 50px;
+    background-color: black;
+    color:white;
+    border:2px solid white;
+    
+
+}
+#SUBMIT{
+    height:40px;
+    WIDTH:100PX;
+    border-radius: 50px;
+    background-color: black;
+    color:white;
+    border:2px solid white;
+    margin-left:200px;
+
+}
+
+
+    </style>
+</head>
+<body>
+<DIV class="container">
+                    <header class="header">
+                    <img id="logo" src="icons8-rh+-64.png">
+                    <h3 id="webname">INSTANT BLOOD DONOR FINDER</h3>
+                    
+                </header>
+                <nav class="navbar">
+                    <li>Home</li>
+                    <li>Be A Donor</li>
+                    <li>Find Donor</li>
+                    <li>About Us </li>
+                    <li>Contact Us</li>
+                    
+                </nav>
+        </section>
+
+        <br/>
+        <br/>
+    </header>
+
+    <section style="background-color: rgb(103, 11, 42);" >
+        <p>
+
+            <center>
+               <h1 style="color:white">DONOR FINDER!</h1> 
+            </center>
+            
+        </p>
+
+    </section>
+
+    <br/>
+
+    <section style="background-color:blue;COLOR:WHITE">
+        <p>
+            <center>
+                
+                Describe your case here.....we will generate an alert according to your case description to the nearby active users...
+
+            </center>
+        </p>
+    </section>
+
+<div class="register">
+    </div>
+    <section class="form">
+        <form id="form1">
+            
+            <label for="fname">Finder Name:</label>
+            <br/>
+            <input type="text" id="fname"  required>
+            <br/>
+            <br/>
+            <label for="locality">Hospital Locality:</label>
+            <br/>
+            <input type="text" id="locality"required>
+            <br/>
+            <label for="hospital_contact">Hospital Name:</label>
+            <br/>
+            <input type="number" id="hospital_contact" required>
+            <br/>
+            <label for="hospital">Hospital Address:</label>
+            <br/>
+            <input type="text" id="hospital" required>
+            <br/>
+            <label for="hospital_contact">Hospital Contact no.:</label>
+            <br/>
+            <input type="number" id="hospital_contact" required>
+            <br/>
+            
+            <label for="city">City:</label>
+            <br/>
+            <input type="text" id="city" required>
+            <br/>
+            <br/>
+            <label for="phone">Finder Contact no.:</label>
+            <br/>
+            <input type="number" id="phone" required>
+            <br/>
+            <br/>
+            <br/>
+            <label for="bg">Blood Group Required:</label>
+            <br/>
+            <select name="bg" id="bg" required>
+                <option value="">please select an option</option>
+                <option value="">A+</option>
+                <option value="">A</option>
+                <option value="">B+</option>
+                <option value="">B</option>
+                <option value="">O+</option>
+                <option value="">O-</option>
+                <option value="">AB+</option>
+            </select>
+           
+            <br/>
+            <br/>
+            <label for="time">Time limit:</label>
+            <br/>
+            <input type="text" id="time" placeholder="1 hour" required>
+            <br/>
+            <br/>
+            <label for="case_description">case-description:</label>
+            <br>
+            <textarea id="case_description" name="case_description" required placeholder="describe your case here.....we will generate an alert according to your case description to the nearby active users..."></textarea>
+
+            <br/>
+            <br/>
+            <div class="buttons">
+               
+                <button ID="SUBMIT" type="submit">SUBMIT</button>
+                <button ID="RESET" type="reset">RESET</button>
+                
+                <style>
+                .pushable {
+                    position: relative;
+                    border: none;
+                    background: transparent;
+                    padding: 0;
+                    cursor: pointer;
+                    outline-offset: 4px;
+                    transition: filter 250ms;
+                  }
+                  .shadow {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 12px;
+                    background: hsl(0deg 0% 0% / 0.25);
+                    will-change: transform;
+                    transform: translateY(2px);
+                    transition:
+                      transform
+                      600ms
+                      cubic-bezier(.3, .7, .4, 1);
+                  }
+                  .edge {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 12px;
+                    background: linear-gradient(
+                      to left,
+                      hsl(340deg 100% 16%) 0%,
+                      hsl(340deg 100% 32%) 8%,
+                      hsl(340deg 100% 32%) 92%,
+                      hsl(340deg 100% 16%) 100%
+                    );
+                  }
+                  .front {
+                    display: block;
+                    position: relative;
+                    padding: 10px 42px;
+                    border-radius: 12px;
+                    padding-top:10px;
+                    padding-bottom:14px;
+                    font-size: 15PX;
+                    HEIGHT:20PX;
+                    WIDTH:80PX;
+                    color: white;
+                    background: hsl(345deg 100% 47%);
+                    will-change: transform;
+                    transform: translateY(-4px);
+                    transition:
+                      transform
+                      600ms
+                      cubic-bezier(.3, .7, .4, 1);
+                  }
+                  .pushable:hover {
+                    filter: brightness(110%);
+                  }
+                  .pushable:hover .front {
+                    transform: translateY(-6px);
+                    transition:
+                      transform
+                      250ms
+                      cubic-bezier(.3, .7, .4, 1.5);
+                  }
+                  .pushable:active .front {
+                    transform: translateY(-2px);
+                    transition: transform 34ms;
+                  }
+                  .pushable:hover .shadow {
+                    transform: translateY(4px);
+                    transition:
+                      transform
+                      250ms
+                      cubic-bezier(.3, .7, .4, 1.5);
+                  }
+                  .pushable:active .shadow {
+                    transform: translateY(1px);
+                    transition: transform 34ms;
+                  }
+                  .pushable:focus:not(:focus-visible) {
+                    outline: none;
+                  }
+                </style>
+
+                <button class="pushable">
+                  <span class="shadow"></span>
+                  <span class="edge"></span>
+                  <span class="front">
+                    GENERATE ALERT
+                  </span>
+                </button>
+                  
+        
+                  
+            
+            </div>
+        </form>
+    </section>
+</div>
+
+    <br/>    
+    <br/>    
+    <br/>    
+
+
+    <footer>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbQXrydFz9CjGI457yy-LdNW6lCFIwD7PHARncCep9amq5derRFzsxh2Bez5VkBs3D2IQ&usqp=CAU" alt="LOGO" height="100px" width="100px" margin-left="30px">
+
+        
+        <section class="footer">
+            <div class="foot" STYLE="text-align: CENTER ;font-weight: bolder">
+                <a id="sah" href="">Privacy Policy &emsp; &emsp;</a>
+                <a id="sah">Terms And Conditions &emsp; &emsp;</a>
+                <a id="sah" href="">Contact &emsp; &emsp;</a></p>
+                <a href="">Feedback &emsp; &emsp;</a>
+                <a href="">Help Desk &emsp; &emsp;</a>
+                <a href="">Guidelines &emsp; &emsp;</a>
+            </div>
+            
+
+                <hr/>
+                <SECTION class="icon">
+                    <div class="contact">
+                     <img src="icons8-facebook-94 - Copy.png" height="50" width="50">
+                     <img src="icons8-instagram-94 - Copy.png"height="50" width="50">
+                 
+                     <img src="icons8-twitter-circled-94.png"height="50" width="50"s>
+                     </div>
+                 </SECTION>
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                                 
+                                 <pre STYLE="text-align: CENTER"> &#128231;<b>Help@Donor.in</b></pre>
+                 
+                                 <p STYLE="text-align: CENTER"><b> &#169;InstantBloodDonorFinder</b></p>
+                  
+                                         
+                 
+                         </section>
+                 
+                 
+                 
+                     </footer>
+                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+                     
+                        
+
+        </section>
+
+
+
+    </footer>
+</DIV>
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation</title>
+    <style>
+        .container {
+            background: linear-gradient(135deg, rgb(224, 85, 85), rgb(241, 131, 149));
+        }
+
+        #sah {
+            text-decoration: none;
+
+        }
+
+        #form1 {
+
+            padding-left: 650px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            border: 3px solid red;
+            height: 130px;
+            background: rgb(231, 224, 224);
+
+        }
+
+        #logo {
+            height: 100px;
+            width: 120px;
+            margin-top: 20px;
+        }
+
+        #webname {
+            margin-top: 50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+        }
+
+        .navbar {
+            /*border:1px solid red;*/
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+
+
+        }
+
+        li {
+            list-style: none;
+            margin-right: 50px;
+            margin-top: 10px;
+            font-size: 14PX;
+            font-weight: bolder;
+            color: rgb(12, 12, 69);
+            border: 1px solid gray;
+            height: 27px;
+            border-radius: 14px;
+            width: 150px;
+            text-align: center;
+            padding-top: 8px;
+            margin-left: 20px;
+            justify-content: space-around;
+            background: rgb(236, 7, 7);
+            color: white;
+            border: 2px solid black;
+
+
+
+        }
+
+        li:hover {
+            background: brown;
+            color: black;
+        }
+
+        .register {
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+
+        }
+
+        .img {
+            margin-left: -500px;
+            margin-top: 200px;
+        }
+
+        #form1 {
+            margin-left: -100px;
+        }
+
+        H4 {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(21, 21, 119);
+            text-shadow: 2px 2px 5px white;
+        }
+
+        input {
+            width: 200px;
+            height: 20px;
+            border-radius: 6px;
+        }
+
+        #SUBMIT {
+            height: 40px;
+            WIDTH: 100PX;
+            border-radius: 50px;
+            background-color: rgb(203, 50, 50);
+            color: white;
+            border: 2px solid black;
+            margin-left: 200px;
+
+        }
+
+        #RESET {
+            height: 40px;
+            WIDTH: 100PX;
+            border-radius: 50px;
+            background-color: rgb(203, 50, 50);
+            color: white;
+            border: 2px solid black;
+
+
+        }
+
+        #country {
+            margin-top: -100px;
+        }
+
+        /*.footer{
+    background:linear-gradient(135deg,rgb(199, 50, 27),rgb(255, 42, 0),rgb(255, 64, 0));
+}*/
+        a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .icon {
+
+
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!----<p>
+                <table>
+                    <tr>
+                            
+                            
+                        <td>
+                            <header class="header">
+                                <img id="logo" src="icons8-rh+-64.png">
+                                <h3 id="webname">INSTANT BLOOD DONOR FINDER</h3>
+                            </header>
+                        </td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Donate Blood....Save Life</h3>
+                        </td>
+                    </tr>
+                </table>---->
+    <DIV class="container">
+        <header class="header">
+            <img id="logo" src="icons8-rh+-64.png">
+            <h3 id="webname">INSTANT BLOOD DONOR FINDER</h3>
+
+        </header>
+        <nav class="navbar">
+            <li>Home</li>
+            <li>Be A Donor</li>
+            <li>Find Donor</li>
+            <li>About Us </li>
+            <li>Contact Us</li>
+
+        </nav>
+
+        <!-----<h3 align="center">
+                        <a id="sah">Home &emsp; &emsp;</a>
+                        <a id="sah" href="">Who We Are &emsp; &emsp;</a>
+                        <a id="sah">How it Works &emsp; &emsp;</a>
+                        <a id="sah" href="">Register as Donor &emsp; &emsp;</a>
+                        <a id="sah" href="">Post Request &emsp; &emsp;</a>
+                        <a id="sah" href="">Blog &emsp; &emsp;</a>
+                        <a id="sah" href="">Contact &emsp; &emsp;</a>
+                        <button style="color: rgb(241, 15, 15);"> Blood Requests </button>
+
+                </h3>--->
+
+
+        </section>
+
+        <br />
+        <br />
+        </header>
+
+        <section style="background-color: rgb(99, 9, 39);">
+            <p>
+
+                <center>
+                    <h1 style="color:white">Become A Donor With Now!</h1>
+                </center>
+
+            </p>
+
+        </section>
+
+        <br />
+
+        <section>
+            <p>
+                <center>
+                    <H4>Just let us know that you’re willing to save lives. We’ll send you blood requests in your
+                        locality through E-MAIL.</H4>
+                </center>
+            </p>
+        </section>
+
+        <div class="register">
+            <!----  <div class="img">
+        <img src="Untitled design.png">--->
+        </div>
+        <section class="form">
+            <form id="form1"  action="/action_page.php" onsubmit="myFunction()">
+
+                <label for="fname">First Name:</label>
+                <br />
+                <input type="text" id="fname" placeholder="E.G. JOHN" required>
+                <br />
+                <br />
+                <label for="lname">Last Name:</label>
+                <br />
+                <input type="text" id="lname" placeholder="E.G. DOE" required>
+                <br />
+                <br />
+                <label for="Email">Email:</label>
+                <br />
+                <input type="email" id="Email" placeholder="john.doe@gmail.com" required>
+                <br />
+                <br />
+                <label for="phone">Phone:</label>
+                <br />
+                <input type="number" id="phone" placeholder="1234567890" required>
+                <br />
+                <br />
+                <label for="bg">Blood Group:</label>
+                <br />
+                <select name="bg" id="bg" required>
+                    <option value="">please select an option</option>
+                    <option value="">A+</option>
+                    <option value="">A</option>
+                    <option value="">B+</option>
+                    <option value="">B</option>
+                    <option value="">O+</option>
+                    <option value="">O-</option>
+                    <option value="">AB+</option>
+                </select>
+
+                <br />
+                <br />
+                <label for="dob">Date of Birth:</label>
+                <br />
+                <input type="date" id="dob" placeholder="entered your date of birth" required>
+                <br />
+                <br />
+                <label for="sa">Street Address:</label>
+                <br />
+                <input type="text" id="sa" placeholder="E.G. 42 Wallaby Way" required>
+                <p>(to connect you with nearby locations)</p>
+                <br />
+                <label for="ase">Apartment,Suite,etc:</label>
+                <br />
+                <input type="text" id="ase" required>
+                <br />
+                <br />
+
+                <table>
+                    <tr>
+                        <td>
+                            <label for="city">City:</label>
+                            <br />
+                            <input type="text" id="city" placeholder="E.G. Sydney" required>
+                            <br />
+                            <br />
+                        </td>
+                        <td>
+                            <label for="sp">State/Province:</label>
+                            <br />
+                            <input type="text" id="sp" placeholder="E.G. New South Wales" required>
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="code">Zip/Postal Code:</label>
+                            <br />
+                            <input type="text" id="code" placeholder="E.G. 2000" required>
+                            <br />
+                            <br />
+                        </td>
+                        <td>
+                            <label for="country" id="india">Country:</label><br>
+
+                            <select name="country" id="country" required>
+                                <option value="">INDIA</option>
+                                <option value="">America</option>
+                                <option value="">England</option>
+                                <option value="">South Africa</option>
+                                <option value="">Hongkong</option>
+                                <option value="">Indonesia</option>
+
+                            </select>
+
+                        </td>
+                    </tr>
+                </table>
+
+                <label for="question">Have you ever being tested for HIV?</label>
+                <br />
+                <br />
+
+                <input type="radio" name="question" id="yes" required>
+                <label for="yes">YES</label>
+                <br />
+
+                <input type="radio" name="question" id="no" required>
+                <label for="no">NO</label>
+                <br />
+                <label for="question">Is Your Age Between (18-60) Year?</label>
+                <br />
+                <br />
+
+                <input type="radio" name="question" id="yes" required>
+                <label for="yes">YES</label>
+                <br />
+
+                <input type="radio" name="question" id="no" required>
+                <label for="no">NO</label>
+                <br />
+                <input type="checkbox" id="tick" required>
+                <label for="tick">I have read and agree the Terms & Service and Privacy Policy</label>
+                <br />
+                <br />
+
+
+                <button ID="SUBMIT" type="submit">SUBMIT</button>
+                <button ID="RESET" type="reset">RESET</button>
+
+            </form>
+        </section>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+
+    <footer>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbQXrydFz9CjGI457yy-LdNW6lCFIwD7PHARncCep9amq5derRFzsxh2Bez5VkBs3D2IQ&usqp=CAU"
+            alt="LOGO" height="100px" width="100px" margin-left="30px">
+
+
+        <section class="footer">
+            <div class="foot" STYLE="text-align: CENTER ;font-weight: bolder">
+                <a id="sah" href="">Privacy Policy &emsp; &emsp;</a>
+                <a id="sah">Terms And Conditions &emsp; &emsp;</a>
+                <a id="sah" href="">Contact &emsp; &emsp;</a>
+                <a href="">Feedback &emsp; &emsp;</a>
+                <a href="">Help Desk &emsp; &emsp;</a>
+                <a href="">Guidelines &emsp; &emsp;</a>
+            </div>
+            <hr />
+            <SECTION class="icon">
+                <div class="contact">
+                    <img src="icons8-facebook-94 - Copy.png" height="50" width="50">
+                    <img src="icons8-instagram-94 - Copy.png" height="50" width="50">
+
+                    <img src="icons8-twitter-circled-94.png" height="50" width="50" s>
+                </div>
+            </SECTION>
+            <pre STYLE="text-align: CENTER"> &#128231;<b>Help@Donor.in</b></pre>
+
+            <p STYLE="text-align: CENTER"><b> &#169;InstantBloodDonorFinder</b></p>
+
+
+
+        </section>
+</footer>
+</DIV>
+<script>
+    const form=document.querySelector('form');
+    form.addEventListener('submit',(e)=>{
+        e.preventDefault();
+        const fd= new FormData(form);
+         const obj=Object.fromEntries(fd);
+         const json=JSON.stringify(obj);
+         
+    })
+ 
+ /*function myFunction() {
+  alert("The form was submitted");
+
+}*/
+</script>
+</body>
+
+</html>

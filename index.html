@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bloodbucket</title>
+    <link rel="website icon" href="icons8-blood-64 (1).png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        *{
+    margin:0;
+
+   
+} 
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    border:3px solid red;
+    height:130px;
+    background:rgb(231, 224, 224);
+
+}
+#logo{
+    height:100px;
+    width:120px;
+    margin-top:20px;
+}
+#webname{
+    margin-top:50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+   
+    
+}
+nav::before{
+    height:80vh;
+    width:100%;
+    content:" ";
+    background:url("IMG_20231013_134754.jpg")center center/cover no-repeat;
+    position:absolute;
+    z-index:-1;
+    margin-top:0%;
+    margin-left: 0%;
+    opacity:0.65;
+    
+}
+.navbar{
+   /*border:1px solid red;*/
+
+   display:flex;
+   flex-direction:row;
+   justify-content: center;
+   align-content: center;
+   
+     
+}
+li{
+    list-style: none;
+    margin-right:50px;
+    margin-top:10px;
+    font-size: 14PX;
+    font-weight: bolder;
+    color: rgb(12, 12, 69);
+    border:1px solid gray;
+    height: 27px;
+    border-radius: 14px;
+    width:150px;
+    text-align: center;
+    padding-top: 8px;
+    margin-left: 20px;
+    justify-content: space-around;
+    background:rgb(236, 7, 7);
+    color:white;
+    border:2px solid black;
+    
+    
+
+}
+li:hover{
+    background:brown;
+    color:black;
+}
+
+h1{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    float: right;
+    margin-top: 250px;
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow:white;
+    font-family:'Courier New', Courier, monospace;
+   }
+   
+   
+   
+   
+  
+  
+h4{
+    text-align: center;
+    font-weight:bolder;
+    margin-top:120px;
+    font-size:60px;
+    font-weight: bolder;
+    font-family:'Courier New', Courier, monospace;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:rgb(10, 10, 32);
+    text-shadow: 4px 5px 2px white;
+}
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    
+}
+section{
+    text-align: center;
+    margin-top: 100px;
+   
+}
+#spin{
+    color:rgb(246, 17, 17);
+    outline :2px black;
+    text-shadow: 5px 5px 10px hwb(0 0% 100% / 0.933);
+    font-family: 'Luckiest Guy', cursive;
+    font-size:60px;
+    text-align: center;
+    font-weight:bolder;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:black;
+
+}
+#spin:after{
+    content:"";
+    animation: spin 6s linear infinite;
+}
+@keyframes spin{
+    0%{
+        content: "Be a Blood Donor Be a Hero...";
+    }
+    40%{
+        content:"One Donation Can Save Three Lives...";
+    }
+    80%{
+        content: "Be Someone's Lifeline:Give Blood...";
+    }
+    90%{
+        content: "Life is in Your Blood:Share It...";
+    }
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+.button{
+    display: flex;
+    margin-left: 450px;
+   
+    justify-content: space-between;
+    margin: auto;
+    width:400px;
+    margin-top: 40px;
+
+
+}
+button{
+    height: 50px;
+    width:180px;
+    background:rgba(0, 0, 255, 0.494);
+    font-size: 20px;
+    font-weight: bolder;
+    border:4px solid black; 
+    padding:5px;
+    
+    color:white;
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+     inset -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+     border-radius: 15px;
+}
+   
+ 
+    </style>
+
+</head>
+<body>
+    
+<header class="header">
+    <img id="logo" src="icons8-rh+-64.png">
+    <h3 id="webname">INSTANT BLOOD DONOR FINDER</h3>
+</header>
+<nav class="navbar">
+    <li><a href='home.html' target="_blank">Home</a></li>
+    <li><a href='blooddonorguidelines.html'  target="_blank">Be A Donor</a></li>
+    <li><a href='donorfinder.html'  target="_blank">Find Donor</a></li>
+    <li><a href='aboutus.html'  target="_blank">About Us</a></li>
+    <li><a href='contact.html'  target="_blank">Contact Us</a></li>
+    
+</nav>
+<h4>Call US ON 08980986374</h4>
+
+
+    
+<section>
+<span id="spin"> </span>
+</section>
+
+
+
+
+    
+    
+</body>
+</html>
